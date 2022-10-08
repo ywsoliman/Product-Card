@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
--   [Solution URL](https://github.com/ywsoliman/Product-Card)
--   [Live Site URL](https://ywsoliman.github.io/Product-Card/)
+-   [Solution URL](https://github.com/ywsoliman/product-preview-card-component/)
+-   [Live Site URL](https://ywsoliman.github.io/product-preview-card-component/)
 
 ## My process
 
