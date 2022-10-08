@@ -23,7 +23,13 @@
     <body>
         <main>
             <div class="main-image">
-                <img src="images/image-product-desktop.jpg" alt="" />
+                <picture>
+                    <source
+                        media="(max-width: 725px)"
+                        srcset="./images/image-product-mobile.jpg"
+                    />
+                    <img src="images/image-product-desktop.jpg" alt="" />
+                </picture>
             </div>
             <div class="info">
                 <p class="category">Perfume</p>
@@ -33,12 +39,14 @@
                     Olivier Polge, Perfumer-Creator for the House of CHANEL.
                 </p>
                 <div class="price">
-                    <div class="new-price">$149.99</div>
-                    <div class="old-price">$169.99</div>
+                    <p class="new-price">$149.99</p>
+                    <del class="old-price">
+                        <span class="sr-only">(Old price) </span>$169.99
+                    </del>
                 </div>
                 <div class="cart">
                     <button>
-                        <img src="images/icon-cart.svg" alt="" />
+                        <img src="images/icon-cart.svg" aria-hidden="true" />
                         Add To Cart
                     </button>
                 </div>

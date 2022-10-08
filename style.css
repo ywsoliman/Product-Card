@@ -81,16 +81,26 @@ main .price .new-price {
     font-family: var(--fraunces);
     color: var(--dark-cyan);
     font-size: 2.3rem;
+    margin: 0;
 }
 
 main .price .old-price {
-    text-decoration: line-through;
     color: var(--dark-grayish-blue);
     font-size: 1.1rem;
 }
 
+main .price .sr-only {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
 main .cart button {
-    margin-top: 16px;
+    margin-top: 28px;
     width: 100%;
     padding: 16px;
     border: none;
@@ -116,9 +126,6 @@ main .cart button:hover {
 @media (max-width: 725px) {
     main {
         flex-direction: column;
-    }
-    main .main-image img {
-        content: url("images/image-product-mobile.jpg");
     }
     main .main-image,
     main .main-image img,
